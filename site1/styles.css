@@ -1,0 +1,30 @@
+@import "./reset.css";
+@import "./header.css";
+@import "./main.css";
+@import "./footer.css";
+
+:root {
+  --black: #222222;
+  --lightGray: #ebebeb;
+  --skyblue: #cfecf7;
+  --darkSkyblue: #b4dce4;
+  --lightGreen: #e2f0d6;
+  --lemon: #fcf8b9;
+  --yellow: #fff086;
+  --pink: #fdc3c2;
+  --gray: color-mod(var(--black) alpha(50%));
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--black);
+  padding: 30px 20px;
+}
+
+body header,
+main,
+footer {
+  max-width: 1100px;
+  width: 100%;
+}

@@ -1,0 +1,28 @@
+{
+  "name": "practice_theory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body": "^5.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "reset.css": "^2.0.2"
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-preset-env": {
+        "stage": 0
+      },
+      "postcss-color-mod-function": {}
+    }
+  },
+  "devDependencies": {
+    "postcss-color-mod-function": "^3.0.3"
+  }
+}

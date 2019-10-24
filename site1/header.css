@@ -1,0 +1,24 @@
+header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 400%;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+li:matches(:first-child) {
+  color: var(--gray);
+  text-decoration: underline;
+}
+
+li:hover:not(:first-child) {
+  transform: scale(1.02);
+  text-shadow: 2px 2px 3px var(--gray);
+  cursor: pointer;
+}
