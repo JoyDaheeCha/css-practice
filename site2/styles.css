@@ -1,0 +1,154 @@
+@import "../reset.css";
+
+:root {
+  --lightGray: #fafafc;
+  --gray: #ecf0f1;
+  --darkGray: #b3b3b4;
+  --darkenImage: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+body {
+  background-color: var(--lightGray);
+}
+main {
+  margin: 30px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu h1 {
+  margin-bottom: 55px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.featured-meals h1 {
+  margin: 35px 0px 25px 0px;
+  font-weight: 600;
+}
+
+.menu__list {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  transition: opacity 0.2s linear;
+}
+
+.menu__list:hover .menu__item {
+  opacity: 0.5;
+}
+
+.menu__list .menu__item:hover {
+  opacity: 1;
+}
+
+.item__icon {
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 5px 10px 18px var(--darkGray);
+}
+
+.item__name {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.featured-meals {
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+  width: 100%;
+}
+
+.featured-wrapper {
+  overflow-x: scroll;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.featured-meal {
+  margin-bottom: 25px;
+  background-color: var(--darkGray);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  width: 100%;
+  min-width: 160px;
+  padding: 20px;
+  margin-right: 35px;
+  display: flex;
+  justify-items: center;
+  align-items: flex-end;
+  height: 100px;
+  background-color: var(--darkGray);
+  color: white;
+  font-weight: 600;
+}
+
+.featured-meal:first-child {
+  background-image: var(--darkenImage), url("https://images.unsplash.com/photo-1540420773420-3366772f4999?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+}
+
+.featured-meal:nth-child(2) {
+  background-image: var(--darkenImage), url("https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=414&q=80");
+}
+
+.featured-meal:nth-child(3) {
+  background-image: var(--darkenImage), url("https://images.unsplash.com/photo-1546964124-0cce460f38ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+}
+
+.featured-meal:nth-child(4) {
+  background-image: var(--darkenImage), url("https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80");
+}
+.meal__btn {
+  margin-left: 10px;
+}
+
+.recipes {
+  height: 100px;
+  overflow-y: scroll;
+}
+.recipes__items {
+  margin: 25px 0px;
+}
+
+.recipes__item {
+  margin: 25px 0px;
+}
+
+.nav__items {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--gray);
+  bottom: 0px;
+  box-shadow: 0px -10px 18px var(--darkGray);
+}
+
+.nav__item {
+  transition: transform 0.2s linear;
+}
+
+.nav__items:hover .nav__item {
+  opacity: 0.5;
+}
+
+.nav__items .nav__item:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
