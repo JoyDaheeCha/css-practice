@@ -128,24 +128,25 @@ header {
   grid-auto-columns: minmax(120px, 1fr);
   gap: 25px;
   overflow-x: scroll;
+  height: 20vh;
+  margin-bottom: 20px;
 }
 
-.rec__list:first-child {
-  margin-left: 20px;
-}
 .rec__list-item {
   display: flex;
   align-items: flex-end;
   background-image: url("https://images.unsplash.com/photo-1566554076474-6ae1f44f1d3f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
   background-size: cover;
-  height: 18vh;
   border-radius: var(--borderRadius);
   box-shadow: var(--boxShadow);
+  margin-bottom: 10px;
 }
 
 .item-text {
   width: 100%;
   background-color: white;
+  border-bottom-right-radius: var(--borderRadius);
+  border-bottom-left-radius: var(--borderRadius);
 }
 
 .item__title {
